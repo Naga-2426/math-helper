@@ -1,0 +1,63 @@
+ Math Helper  
+
+### 📚 A Simple Math Chatbot for Kids  
+
+**Math Helper** is an interactive chatbot designed to help kids practice basic mathematical operations like addition, subtraction, multiplication, and division. The chatbot generates random math problems and provides instant feedback on the user's answers.  
+
+---
+
+## ✨ Features  
+
+- ✅ Randomly generates math problems  
+- ✅ Supports Addition (+), Subtraction (-), Multiplication (×), and Division (÷)  
+- ✅ Provides instant feedback on answers  
+- ✅ User-friendly and interactive  
+- ✅ Type "exit" to stop the chatbot  
+
+---
+
+## 🚀 How to Run  
+
+1. **Clone the repository**  
+   ```sh
+   git clone https://github.com/Naga-2426/math-helper.git
+   ```
+2. **Navigate to the project directory**  
+   ```sh
+   cd math-helper
+   ```
+3. **Run the chatbot**  
+   ```sh
+   python math_chatbot.py
+   ```
+
+---
+
+## 🖥️ Example Usage  
+
+```
+Hello! I am your math chatbot. Let's practice some math!  
+What is 5 + 3?  
+> 8  
+Great job! That's correct.  
+
+What is 9 - 4?  
+> 6  
+Oops! The correct answer is 5.  
+
+Type 'exit' to quit.  
+```
+
+---
+
+## 🛠️ Requirements  
+
+- Python 3.x  
+- No additional dependencies required  
+
+---
+
+## 📌 Contributions  
+
+Contributions are welcome! Feel free to fork the repository and submit a pull request with improvements or additional features.  
+
