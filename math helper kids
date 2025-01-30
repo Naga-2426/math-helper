@@ -1,0 +1,37 @@
+import random
+
+def generate_question():
+    operations = ['+', '-', '*', '/']
+    num1 = random.randint(1, 10)
+    num2 = random.randint(1, 10)
+    operation = random.choice(operations)
+    
+    if operation == '/':  # Ensure division results in a whole number
+        num1 = num2 * random.randint(1, 10)
+    
+    question = f"What is {num1} {operation} {num2}? "
+    answer = eval(str(num1) + operation + str(num2))
+    return question, answer
+
+def math_chatbot():
+    print("Hello! I am your math chatbot. Let's practice some math!")
+    
+    while True:
+        question, correct_answer = generate_question()
+        user_answer = input(question)
+        
+        if user_answer.lower() == 'exit':
+            print("Goodbye! Keep practicing your math.")
+            break
+        
+        try:
+            user_answer = float(user_answer)
+            if user_answer == correct_answer:
+                print("Great job! That's correct.")
+            else:
+                print(f"Oops! The correct answer is {correct_answer}.")
+        except ValueError:
+            print("Please enter a number or type 'exit' to quit.")
+
+if __name__ == "__main__":
+    math_chatbot()
